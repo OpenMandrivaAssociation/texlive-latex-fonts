@@ -1,3 +1,9 @@
+# revision 15207
+# category Package
+# catalog-ctan /fonts/latex
+# catalog-date 2009-06-25 15:19:00 +0200
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-latex-fonts
 Version:	20090625
 Release:	1
@@ -94,6 +100,7 @@ format, in the amsfonts distribution.
 %{_texmfdistdir}/fonts/tfm/public/latex-fonts/lcmssi8.tfm
 %{_texmfdistdir}/fonts/tfm/public/latex-fonts/line10.tfm
 %{_texmfdistdir}/fonts/tfm/public/latex-fonts/linew10.tfm
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -104,3 +111,5 @@ format, in the amsfonts distribution.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
