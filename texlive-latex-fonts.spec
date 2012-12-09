@@ -102,3 +102,17 @@ format, in the amsfonts distribution.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20090625-2
++ Revision: 753180
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20090625-1
++ Revision: 718821
+- texlive-latex-fonts
+- texlive-latex-fonts
+- texlive-latex-fonts
+- texlive-latex-fonts
+
