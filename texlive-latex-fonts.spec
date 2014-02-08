@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-latex-fonts
 Version:	20090625
-Release:	2
+Release:	3
 Summary:	A collection of fonts used in LaTeX distributions
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/latex
