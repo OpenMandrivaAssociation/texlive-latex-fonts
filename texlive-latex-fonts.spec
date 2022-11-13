@@ -1,18 +1,12 @@
-# revision 28888
-# category Package
-# catalog-ctan /fonts/latex
-# catalog-date 2012-07-07 15:54:01 +0200
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-latex-fonts
-Version:	20190228
+Version:	28888
 Release:	1
 Summary:	A collection of fonts used in LaTeX distributions
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/latex
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex-fonts.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex-fonts.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex-fonts.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex-fonts.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -31,12 +25,12 @@ provided. Most of the fonts are also available in Adobe Type 1
 format, in the amsfonts distribution.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -96,7 +90,7 @@ format, in the amsfonts distribution.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
