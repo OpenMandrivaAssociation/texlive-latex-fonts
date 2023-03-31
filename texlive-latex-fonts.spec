@@ -1,6 +1,6 @@
 Name:		texlive-latex-fonts
 Version:	28888
-Release:	1
+Release:	2
 Summary:	A collection of fonts used in LaTeX distributions
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/latex
