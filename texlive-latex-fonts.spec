@@ -3,7 +3,7 @@ Version:	28888
 Release:	2
 Summary:	A collection of fonts used in LaTeX distributions
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/latex
+URL:		https://www.ctan.org/tex-archive/fonts/latex
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex-fonts.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex-fonts.doc.r%{version}.tar.xz
